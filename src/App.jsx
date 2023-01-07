@@ -1,6 +1,6 @@
 import { Link, Route, Routes } from "react-router-dom"
 import './App.css'
-import ProjectRoutes from "./routes/ProjectRoutes"
+import ProjectRoutes from "./routes"
 
 function App() {
 
