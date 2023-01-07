@@ -1,10 +1,25 @@
-
+import { Link, Route, Routes } from "react-router-dom"
 import './App.css'
+import ProjectRoutes from "./routes/ProjectRoutes"
 
 function App() {
 
   return (
-    <div className="App"></div>
+<>
+
+
+<header>
+         <ul>
+          <li><Link to={"/"}>Drivers</Link></li>
+          <li><Link to={"/details"}>Deatils</Link></li>
+          <li><Link to={"/catalog"}>Deatils</Link></li>
+         </ul>
+      </header>
+
+<ProjectRoutes/>
+
+</>
+
   )
 }
 
