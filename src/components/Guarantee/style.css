@@ -1,0 +1,35 @@
+.guarantee {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.guarantee-inside {
+    display: flex;
+    align-items: center;
+    color: #1B5A7D;
+    justify-content: space-evenly;
+    background: #E2F4FF;
+    border-radius: 20px;
+}
+
+.guarantee-parts-img{
+    margin-right: 20px;
+}
+
+.guarantee-text h1 {
+    font-family: Poppins-Semi;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.guarantee-text span {
+    font-size: 18px;
+}
+
+.guarantee-parts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 44px 0px;
+}

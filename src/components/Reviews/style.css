@@ -1,0 +1,43 @@
+.reviews {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.review-top h3 {
+    font-family: Poppins-Semi;
+    font-size: 15px;
+    color: #1B5A7D;
+}
+
+.reviews p {
+    font-size: 13px;
+    padding: 11px 26px;
+    background: #E2F4FF;
+    border-radius: 20px;
+}
+
+.review-top{
+    display: flex;
+    align-items: center;
+}
+
+.review-top img{
+    margin-right: 30px;
+    border: 2px dashed #EDA415;
+    border-radius: 50%;
+}
+
+.review-top{
+    margin-bottom: 10px;
+}
+
+.reviews-part{
+    border: 1px solid #1B5A7D;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.reviews .parts{
+    padding: 10px 10px;
+}
