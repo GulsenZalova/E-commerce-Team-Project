@@ -21,4 +21,18 @@
 
 body {
     font-family: Poppins-Regular;
-  }
+}
+
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+.inputArea{
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,9 @@
+.row{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.information{
+    padding: 20px 0;
+}

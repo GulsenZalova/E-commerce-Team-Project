@@ -1,0 +1,40 @@
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+.nav{
+    padding: 10px 0;
+    background-color: #F4F4F4;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+.list li a{
+display: flex;
+align-items: center;
+font-weight: 500;
+gap: 5px;
+font-size: 16px;
+line-height: 24px;
+color: #3A3A3A;
+}
+.drawerBTN{
+    display: none;
+}
+
+@media (max-width:992px){
+    .headerNav{
+        display: none;
+    }
+    .drawerBTN{
+        display: block;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+    }
+}

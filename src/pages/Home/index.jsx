@@ -7,10 +7,10 @@ function Home() {
   
   return (
     <div>
-      salam nnn gg
+      {/* salam nnn gg
       {data && data.map(item=>(
        <span>{item.id}</span> 
-      ))}
+      ))} */}
     </div>
   )
 }
