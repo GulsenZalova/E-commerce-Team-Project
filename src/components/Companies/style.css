@@ -1,0 +1,15 @@
+.companies {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.companies-inside {
+    display: flex;
+    align-items: center;
+    color: #1B5A7D;
+    justify-content: space-evenly;
+    background: #E2F4FF;
+    border-radius: 20px;
+    padding: 44px 0px;
+}

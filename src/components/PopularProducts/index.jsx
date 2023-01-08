@@ -18,7 +18,9 @@ console.log(selectedCategory)
                     <ul>
                         {React.Children.toArray(
                             categories && categories.map(item => (
-                                <li style={{opacity:item===selectedCategory && "0.6"}} className='selected-categories' onClick={() => setSelectedCategory(item)}>{item}</li>
+                                <li 
+                                style={{opacity:item===selectedCategory && "0.6"}} 
+                                className='selected-categories' onClick={() => setSelectedCategory(item)}>{item}</li>
                             ))
                         )}
                     </ul>
