@@ -1,0 +1,71 @@
+.advertisement--title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    color: #1B5A7D;
+    font-family: Poppins-Semi;
+    margin-bottom: 19px;
+}
+
+.advertising{
+    margin-bottom: 55px;
+}
+
+.advertisement {
+    display: flex !important;
+    max-width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.advertisement--part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advertisement--buttons {
+    display: flex;
+    font-style: normal;
+    font-size: 16px;
+}
+
+/* .advertisement--buttons--left {
+    color: white;
+    padding: 18px 32px;
+    background: #EDA415;
+    border-radius: 20px;
+    margin-right: 17px;
+    border-color: transparent;
+    font-family: Poppins-Semi;
+} */
+
+.advertisement--buttons--right {
+    color: #1B5A7D;
+    padding: 18px 32px;
+    border-radius: 20px;
+    background: transparent;
+    border-color: #1B5A7D;
+    font-family: Poppins-Semi;
+}
+
+.image-advertisement{
+    position: relative;
+}
+
+.discount-img{
+    position: absolute;
+}
+
+.main-img{
+    max-width: 331px;
+}
+
+.discount-img{
+    right: -25px;
+    bottom: 47px;
+}
+
+.ant-carousel .slick-dots li button{
+    background: #EDA415 !important;
+}

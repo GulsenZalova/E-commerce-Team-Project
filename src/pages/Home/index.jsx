@@ -1,17 +1,21 @@
 import React, { useContext } from 'react'
-import { dataContext} from '../../contexts/ProductContext'
+import Advertisement from '../../components/Advertisement'
+import Banner from '../../components/Banner'
+import IntermediateProducts from '../../components/IntermediateProducts'
+import MiniCart from '../../components/MiniCart'
+import PopularProducts from '../../components/PopularProducts'
+import { dataContext } from '../../contexts/ProductContext'
 
 function Home() {
-    let {data} = useContext(dataContext)
-    console.log(data)
-  
+
   return (
-    <div>
-      salam nnn gg
-      {data && data.map(item=>(
-       <span>{item.id}</span> 
-      ))}
-    </div>
+    <>
+      <Advertisement />
+      <MiniCart />
+      <PopularProducts />
+      <Banner />
+      <IntermediateProducts />
+    </>
   )
 }
 

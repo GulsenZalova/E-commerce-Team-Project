@@ -22,6 +22,20 @@ export const network = {
 
         return responseData;
     },
+    getLimitedProducts: async (url,lim) => {
+
+        let responseData = [];
+        await axiosInstance.get(`${url}?limit=${lim}`)
+            .then(res => {
+                responseData = res.data;
+            })
+            .catch(err => {
+                console.log('Error', err);
+                throw err
+            })
+
+        return responseData;
+    },
     getCategories: async (url,category) => {
         let responseData = [];
         await axiosInstance.get(`${url}/${category}`)

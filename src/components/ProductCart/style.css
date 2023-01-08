@@ -1,0 +1,81 @@
+.productt {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #1B5A7D;
+    transition: 0.3s ease all;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.productt h3 {
+    font-family: Poppins-Semi;
+    font-size: 17px;
+    color: #1B5A7D;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.productt .product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.productt .product-price {
+    font-family: Poppins-Semi;
+    font-size: 17px;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.carts {
+    padding: 0px 10px;
+}
+
+.whishlist-icon {
+    position: absolute;
+    right: 25px;
+}
+
+.whishlist-icon img {
+    background: #B3D4E5;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.product-add-cart,.look-detailly {
+    font-size: 15px;
+    color: #272727;
+    padding: 12px 20px;
+    background: #B3D4E5;
+    border-radius: 20px;
+    border-color: transparent;
+    font-family: Poppins-Semi;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.addCart{
+    margin-right: 30px;
+}
+
+
+.product-add-cart .shopping-icon{
+    background: #EDA415;
+    border-radius: 50%;
+}
+
+.shopping-icon img{
+    padding: 3px;
+    width: 25px;
+}

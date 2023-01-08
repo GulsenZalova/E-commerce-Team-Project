@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.8.0",
     "@fontsource/dancing-script": "^4.5.10",
     "@fontsource/poppins": "^4.5.10",
     "@fontsource/roboto": "^4.5.8",

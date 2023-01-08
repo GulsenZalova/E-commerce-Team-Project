@@ -1,0 +1,55 @@
+.mini-carts {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.categories--name h3 {
+    font-family: Poppins-semi;
+    font-style: normal;
+    font-size: 23px;
+    color: #1B5A7D;
+    margin-bottom: 10px;
+}
+
+.categories--name span {
+    font-size: 18px;
+}
+
+.categories--name {
+    text-align: center;
+}
+
+.categories-carousel {
+    padding: 20px;
+    display: flex !important;
+    justify-content: space-between;
+    border: 1px solid #1B5A7D;
+    border-radius: 20px;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+.categories-carousel:hover {
+    opacity: 0.8;
+}
+
+.carousel-dots {
+    margin-top: 100px;
+}
+
+img {
+    object-fit: contain;
+}
+
+.all-categories-carousel {
+    padding: 0px 10px;
+}
+
+.ant-carousel .slick-prev {
+    inset-inline-start: -10px;
+}
+
+.ant-carousel .slick-next{
+    inset-inline-end: -10px;
+}
