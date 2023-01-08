@@ -7,7 +7,7 @@ import { useContext, useState } from 'react';
 import { dataContext } from "../../contexts/ProductContext"
 import "./style.css"
 function Navbar() {
-  const { categoires } = useContext(dataContext)
+  const { categories } = useContext(dataContext)
   const [open, setOpen] = useState(false);
   const showDrawer = () => {
     setOpen(true);
@@ -20,7 +20,7 @@ function Navbar() {
       key: '1',
       label: (
         <a target="_blank">
-          {categoires[0]}
+          {categories[0]}
         </a>
       ),
     },
@@ -28,7 +28,7 @@ function Navbar() {
       key: '2',
       label: (
         <a target="_blank" >
-          {categoires[1]}
+          {categories[1]}
         </a>
       ),
     },
@@ -36,14 +36,14 @@ function Navbar() {
       key: '3',
       label: (
         <a target="_blank">
-          {categoires[2]}
+          {categories[2]}
         </a>
       ),
     },
     {
       key: '4',
       label: <a target="_blank">
-        {categoires[3]}
+        {categories[3]}
       </a>,
     },
   ];
