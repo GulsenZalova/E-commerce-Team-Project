@@ -1,8 +1,14 @@
 import React from 'react'
+import FooterMenu from '../FooterMenu'
+import FooterContact from '../FooterContact'
 
+import "./style.css"
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className='footer'>
+    <FooterContact/>
+    <FooterMenu/>
+    </div>
   )
 }
 

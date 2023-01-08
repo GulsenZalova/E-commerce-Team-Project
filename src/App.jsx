@@ -8,13 +8,13 @@ function App() {
 <>
 
 
-<header>
+{/* <header>
          <ul>
           <li><Link to={"/"}>Drivers</Link></li>
           <li><Link to={"/details"}>Deatils</Link></li>
           <li><Link to={"/catalog"}>Deatils</Link></li>
          </ul>
-      </header>
+</header> */}
 
 <ProjectRoutes/>
 
