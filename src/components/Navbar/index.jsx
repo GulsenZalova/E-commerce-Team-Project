@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'antd';
 // import type { MenuProps } from 'antd';
+import { Link } from "react-router-dom"
 import { DownOutlined, SmileOutlined } from '@ant-design/icons';
 import { Dropdown, Space, Drawer,Button } from 'antd';
 import { useContext, useState } from 'react';
@@ -57,7 +58,7 @@ function Navbar() {
               <Col span={6} md={6}>
                 <Dropdown menu={{ items }}>
                   <a onClick={(e) => e.preventDefault()}>
-                    <Space style={{ backgroundColor: "orange", color: "white", padding: "10px" }}>
+                    <Space style={{ backgroundColor: "#EDA415", color: "white", padding: "10px" }}>
                       Browse Catagories
                       <DownOutlined />
                     </Space>
@@ -67,11 +68,11 @@ function Navbar() {
               <Col className='inputArea' span={10} md={6}>
               <nav className='headerNav'>
                     <ul className='list'>
-                      <li><a>Home <DownOutlined /></a></li>
-                      <li><a>Catalog <DownOutlined /></a></li>
+                      <li><Link to={"/"}>Home <DownOutlined /></Link></li>
+                      <li><Link to={"/catalog"}>Catalog <DownOutlined /></Link></li>
                       <li><a>Blog</a></li>
                       <li><a>Pages <DownOutlined /></a></li>
-                      <li><a>About us</a></li>
+                      <li style={{whiteSpace:"nowrap"}}><a>About us</a></li>
                     </ul>
                   </nav>
                 <Button  className='drawerBTN'  type="primary" onClick={showDrawer}>
@@ -84,7 +85,7 @@ function Navbar() {
                       <li><a>Catalog <DownOutlined /></a></li>
                       <li><a>Blog</a></li>
                       <li><a>Pages <DownOutlined /></a></li>
-                      <li><a>About us</a></li>
+                      <li style={{whiteSpace:"nowrap"}}><a >About us</a></li>
                     </ul>
                   </nav>
                 </Drawer>
@@ -93,7 +94,7 @@ function Navbar() {
           </Col>
           <Col span={8}  >
             <Row style={{ display: "flex",alignItems: "end",justifyContent:"center"}}>
-              <Col  className='row' span={8}>30 Days Free Return</Col>
+              <Col  className='desc' span={8}>30 Days Free Return</Col>
             </Row>
           </Col>
         </Row>

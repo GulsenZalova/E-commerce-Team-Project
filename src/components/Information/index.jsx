@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Row } from 'antd';
 import location from "../../assets/icons/Location.png"
 import truck from "../../assets/icons/truck.svg"
+
 import "./style.css"
 function Information() {
     return (

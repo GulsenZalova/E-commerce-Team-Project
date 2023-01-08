@@ -1,13 +1,11 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { network, BASE_URL } from "../api/axiosinstance";
-
 export const dataContext = createContext(null)
 export const ProductContext = ({ children }) => {
 
     const [data, setData] = useState([]);
     const [categories, setCategories] = useState([]);
     const [singleProduct, setSingleProduct] = useState({});
-
 
     useEffect(() => {
         network.getAll(BASE_URL)
@@ -24,7 +22,7 @@ export const ProductContext = ({ children }) => {
     // network.getById(BASE_URL/)
     //     },[singleProduct])
 
-    console.log(categories)
+    // console.log(categories)
 
 
     const values = {

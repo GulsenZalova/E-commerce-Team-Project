@@ -5,7 +5,7 @@ import HeaderMain from '../HeaderMain'
 import { Col, Row } from 'antd';
 function Header() {
   return (
-    <header>
+    <header style={{marginBottom:"55px"}}>
         <Col>
           <Col span={24}><Information/></Col>
         </Col>

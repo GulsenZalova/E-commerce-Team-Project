@@ -6,6 +6,7 @@
 
 .inputArea{
     position: relative;
+    display: flex;
 }
 .align{
     align-items: center;
@@ -14,6 +15,12 @@
     position: absolute;
     top: 0;
     right: 0;
+    color: white;
+    padding: 8px ;
+    background: #EDA415;
+    border-radius: 5px;
+    border-color: transparent;
+    font-family: Poppins-Semi;
 }
 .span{
     width: 10px;

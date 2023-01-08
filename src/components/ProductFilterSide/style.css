@@ -1,0 +1,33 @@
+.side {
+    background-color: white;
+    padding: 10px;
+}
+
+.catagories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catagoryname {
+    font-size: 16.09px;
+    line-height: 24px;
+    color: #003F62;
+}
+.catagorycount{
+font-size: 15.09px;
+line-height: 23px;
+color: #595959;
+}
+
+.catagory{
+font-size: 16.09px;
+line-height: 24px;
+color: #222222;
+}

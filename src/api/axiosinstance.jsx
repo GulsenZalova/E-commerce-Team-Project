@@ -36,6 +36,19 @@ export const network = {
 
         return responseData;
     },
+    getcatagoryProduct: async (url,catagoryname) =>{
+        let responseData = [];
+        await axiosInstance.get(`${url}/category/${catagoryname}`)
+            .then(res => {
+                responseData = res.data;
+            })
+            .catch(err => {
+                console.log('Error', err);
+                throw err
+            })
+
+        return responseData;
+    },
     getCategories: async (url,category) => {
         let responseData = [];
         await axiosInstance.get(`${url}/${category}`)
