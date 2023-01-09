@@ -14,7 +14,6 @@ function ProductFilter() {
   const info=data.data
 
   const filteredProducts = info.filter(x=>selectCatagory.includes(x.category))
- console.log(filteredProducts)
   useEffect(() => {
     network.getcatagoryProduct(BASE_URL,selectCatagory)
     .then(res=>console.log(res))

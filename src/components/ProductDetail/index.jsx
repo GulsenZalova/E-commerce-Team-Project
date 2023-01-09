@@ -13,9 +13,6 @@ import {
 
 function ProductDetail({productDetail}) {
 
-
-
-
     return (
         <>
             {productDetail &&
