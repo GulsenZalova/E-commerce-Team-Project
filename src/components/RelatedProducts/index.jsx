@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 
 function RelatedProducts({productDetail}) {
 
+    console.log(productDetail)
     let { data} = useContext(dataContext);
 
     const carouselResponsiveSettings = [
