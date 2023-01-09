@@ -11,7 +11,7 @@
 
 .banner-inside {
     position: absolute;
-    left: 65%;
+    left: 52%;
     top: 50%;
     transform: translate(0px, -50%);
     text-align: center;
@@ -27,7 +27,54 @@
     margin-top: 20px;
 }
 
-.banner-inside h4{
+.banner-inside h4 {
     color: white;
     margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner-inside h1 {
+        font-size: 23px;
+    }
+
+    .banner-inside {
+        left: 64%;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .popular ul .selected-categories {
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .banner-inside button:first-of-type {
+        display: none;
+    }
+
+    .banner-inside h1 {
+        font-size: 16px;
+    }
+
+    .banner-inside h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .banner-inside h1 {
+        font-size: 14px;
+        margin: 5px 0px;
+    }
+
+    .banner-inside h4 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .banner-inside {
+        left: 55%;
+      }
 }

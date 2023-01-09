@@ -5,16 +5,13 @@ import discountImg from '../../assets/images/discount.png'
 import { Carousel } from 'antd';
 import { BASE_URL, network } from '../../api/axiosinstance';
 import Buttons from '../Buttons';
+import useLimitedProducts from '../../customHooks/useLimitedProducts';
 
 
 function Advertisement() {
 
-    const [product, setProduct] = useState([]);
+    let {product} = useLimitedProducts(3);
 
-    useEffect(() => {
-        network.getLimitedProducts(BASE_URL, "3")
-            .then(res => setProduct(res));
-    }, [])
 
     return (
         <div className='advertising'>

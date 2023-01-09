@@ -39,6 +39,15 @@
 
 .carts {
     padding: 0px 10px;
+    transition: 0.3s ease all;
+}
+
+.carts:hover .product-image{
+opacity: 0.8;
+}
+
+.product-image{
+    transition: 0.3s ease all;
 }
 
 .whishlist-icon {
@@ -78,4 +87,10 @@
 .shopping-icon img{
     padding: 3px;
     width: 25px;
+}
+
+@media only screen and (max-width:768px) {
+   .carts{
+    padding: 0px;
+   }
 }

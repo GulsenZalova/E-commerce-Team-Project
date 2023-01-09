@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Catalog from '../pages/Catalog'
 import Home from '../pages/Home'
 import ProjectLayout from '../components/ProjectLayout'
+import Details from '../pages/Details'
 
 function ProjectRoutes() {
   return (
@@ -12,6 +13,7 @@ function ProjectRoutes() {
         <Route path='/' element={<ProjectLayout />}>
           <Route index element={<Home />}></Route>
           <Route path='/catalog' element={<Catalog />}></Route>
+          <Route path='/product/:id' element={<Details />}></Route>
         </Route>
       </Routes>
     </>

@@ -8,8 +8,6 @@ import MiniCart from '../../components/MiniCart'
 import News from '../../components/News'
 import PopularProducts from '../../components/PopularProducts'
 import Reviews from '../../components/Reviews'
-import { dataContext } from '../../contexts/ProductContext'
-
 function Home() {
 
   return (

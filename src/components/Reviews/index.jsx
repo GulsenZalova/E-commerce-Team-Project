@@ -6,9 +6,25 @@ import { ArrowLeftOutlined,ArrowRightOutlined } from "@ant-design/icons";
 
 
 function Reviews() {
+
+    const carouselResponsiveSettings = [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+    ]
+
     return (
         <div className='reviews'>
-            <Carousel arrows={true} dots={false} slidesToShow={3} prevArrow={<ArrowLeftOutlined />} nextArrow={<ArrowRightOutlined />}>
+            <Carousel responsive={carouselResponsiveSettings} arrows={true} dots={false} slidesToShow={3} prevArrow={<ArrowLeftOutlined />} nextArrow={<ArrowRightOutlined />}>
                 <div className='parts'>
                     <div className='reviews-part'>
                         <div className='review-top'>

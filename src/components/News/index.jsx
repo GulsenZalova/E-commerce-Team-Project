@@ -5,9 +5,19 @@ import blog2 from "../../assets/images/Blog-2.svg"
 import "./style.css"
 
 function News() {
+
+    const carouselResponsiveSettings = [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+    ]
+
     return (
         <div className='news'>
-            <Carousel dots={true} slidesToShow={2}>
+            <Carousel responsive={carouselResponsiveSettings} dots={true} slidesToShow={2}>
                 <div className='part'>
                     <div className='news-inside'>
                         <img className='news-img' src={blog1} />

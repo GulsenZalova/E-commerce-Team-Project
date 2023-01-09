@@ -7,7 +7,7 @@
     margin-bottom: 19px;
 }
 
-.advertising{
+.advertising {
     margin-bottom: 55px;
 }
 
@@ -30,16 +30,6 @@
     font-size: 16px;
 }
 
-/* .advertisement--buttons--left {
-    color: white;
-    padding: 18px 32px;
-    background: #EDA415;
-    border-radius: 20px;
-    margin-right: 17px;
-    border-color: transparent;
-    font-family: Poppins-Semi;
-} */
-
 .advertisement--buttons--right {
     color: #1B5A7D;
     padding: 18px 32px;
@@ -49,23 +39,63 @@
     font-family: Poppins-Semi;
 }
 
-.image-advertisement{
+.image-advertisement {
     position: relative;
 }
 
-.discount-img{
+.discount-img {
     position: absolute;
 }
 
-.main-img{
+.main-img {
     max-width: 331px;
 }
 
-.discount-img{
+.discount-img {
     right: -25px;
     bottom: 47px;
 }
 
-.ant-carousel .slick-dots li button{
+.ant-carousel .slick-dots li button {
     background: #EDA415 !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .main-img {
+        max-width: 200px;
+    }
+
+    .advertisement--title {
+        font-size: 23px;
+    }
+
+    .advertisement--buttons--right {
+        padding: 9px 16px;
+    }
+    .advertising .slick-dots-bottom{
+        bottom: -25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .advertisement--buttons--right {
+        padding: 4px 8px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .advertisement--buttons--right {
+        padding: 4px 8px;
+    }
+    .main-img {
+        max-width: 80px;
+    }
+    .advertisement--title {
+        font-size: 16px;
+    }
+    .advertisement--buttons--right{
+        border-radius: 5px;
+        padding: 2px 4px;
+        font-size: 12px;
+    }
 }

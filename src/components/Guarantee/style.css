@@ -13,7 +13,7 @@
     border-radius: 20px;
 }
 
-.guarantee-parts-img{
+.guarantee-parts-img {
     margin-right: 20px;
 }
 
@@ -27,9 +27,42 @@
     font-size: 18px;
 }
 
-.guarantee-parts{
+.guarantee-parts {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 44px 0px;
+}
+
+@media only screen and (max-width:992px) {
+    .guarantee-text h1 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .guarantee-text span {
+        font-size: 14px;
+    }
+
+    .guarantee-parts-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .guarantee-inside {
+        flex-direction: column;
+    }
+
+    .guarantee-parts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        width: 100%;
+    }
+    .guarantee-text{
+        text-align: right;
+    }
 }

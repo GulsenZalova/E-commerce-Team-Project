@@ -6,5 +6,4 @@ function Buttons(props) {
     <button className='main-button'>{props.name}</button>
   )
 }
-
 export default Buttons

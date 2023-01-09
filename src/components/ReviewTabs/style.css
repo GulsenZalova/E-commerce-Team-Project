@@ -1,0 +1,30 @@
+.product-tabs {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.product-tabs-menu {
+    color: #1B5A7D;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border-color: transparent;
+    font-family: Poppins-Semi;
+}
+
+.product-tabs-inside {
+    border: 1px solid #1B5A7D;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.inside-header {
+    color: #1B5A7D;
+    font-size: 16px;
+    font-family: Poppins-Semi;
+}
+
+.inside-text{
+    opacity: 0.8;
+    font-family: Poppins-Semi;
+}

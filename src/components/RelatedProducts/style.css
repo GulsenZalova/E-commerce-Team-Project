@@ -1,0 +1,23 @@
+.related-products {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.related-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.related-header h1 {
+    font-family: Poppins-Semi;
+    font-style: normal;
+    font-size: 27px;
+    color: #1B5A7D;
+}
+
+.related-products .slick-dots-bottom{
+    bottom: -25px;
+}

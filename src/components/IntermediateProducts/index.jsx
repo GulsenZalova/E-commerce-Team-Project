@@ -4,15 +4,11 @@ import { BASE_URL, network } from '../../api/axiosinstance';
 import "./style.css"
 import shoppingCart from "../../assets/icons/shopping-cart.svg"
 import eyeIcon from "../../assets/icons/eye.svg"
+import useLimitedProducts from '../../customHooks/useLimitedProducts';
 
 function IntermediateProducts() {
 
-    const [product, setProduct] = useState([]);
-
-    useEffect(() => {
-        network.getLimitedProducts(BASE_URL, "2")
-            .then(res => setProduct(res));
-    }, [])
+    let {product} = useLimitedProducts(2);
 
     return (
         <div className='intermediate-products'>
@@ -21,10 +17,10 @@ function IntermediateProducts() {
                     {React.Children.toArray(
                         product && product.map(item => (
                             <div className='intermediate--carousel'>
-                                <div style={{ width: "45%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                                     <img width={200} className='item-img' src={item.image} />
                                 </div>
-                                <div style={{ display: "flex", flexDirection: "column", width: "55%" }}>
+                                <div className='products-style' style={{ display: "flex", flexDirection: "column"}}>
                                     <h3>{item.title}</h3>
                                     <span className='product-price'>${item.price.toFixed(2)}</span>
                                     <Rate disabled defaultValue={0} className="star-product" />

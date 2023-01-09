@@ -1,0 +1,157 @@
+.product-detaill {
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 55px;
+    gap: 50px;
+}
+
+.product-detaill--name {
+    font-family: Poppins-Semi;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.product-detaill--price {
+    font-family: Poppins-Semi;
+    font-size: 22;
+    margin-bottom: 20px;
+}
+
+.product-detaill--rate {
+    margin-bottom: 20px;
+}
+
+.product-detaill--rate .reviewss {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.product-detaill--available {
+    margin-bottom: 5px;
+}
+
+.product-detaill--available .available {
+    font-size: 18px;
+    color: #232323;
+    margin-right: 10px;
+}
+
+.product-detaill--available .stock {
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #30BD57;
+}
+
+.count-stock {
+    opacity: 0.8;
+}
+
+.product-detaill--info hr {
+    margin: 20px 0px;
+}
+
+.product-detaill--info {
+    padding: 0px 30px;
+}
+
+.info-topics {
+    font-family: Poppins-Semi;
+    font-size: 18px;
+    color: #232323;
+}
+
+.quantity-helper {
+    padding: 5px 15px;
+    background: #EEEEEE;
+    margin: 0px 10px;
+}
+
+.product-counter {
+    padding: 5px 15px;
+    background: #EEEEEE;
+    border: 1px solid grey;
+}
+
+.product-count {
+    padding: 5px 25px;
+    background: #EEEEEE;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.info-quantity {
+    margin-right: 10px;
+}
+
+.product-quantity {
+    margin-bottom: 30px;
+}
+
+.product-size {
+    margin-bottom: 20px;
+}
+
+.product-detail-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-detail-add button {
+    color: white;
+    padding: 18px 56px;
+    background: #EDA415;
+    border-radius: 20px;
+    border-color: transparent;
+    font-family: Poppins-Semi;
+}
+
+.product-detail-add img {
+    background: #B3D4E5;
+    padding: 18px;
+    border-radius: 50%;
+}
+
+.product-detail-sku,
+.product-detail-category {
+    margin-bottom: 20px;
+}
+
+.product-detaill--img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-detaill--img img {
+    width: 100%;
+    max-height: 600px;
+}
+
+@media only screen and (max-width:1200px) {
+    .product-detaill{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .product-detaill--info{
+        padding: 0px;
+    }
+ }
+
+ @media only screen and (max-width:768px) {
+    .product-detail-add button{
+        padding: 18px 32px;
+    }
+ }
+
+ @media only screen and (max-width:576px) {
+    .product-detail-add{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .product-detail-add button{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+ }

@@ -15,7 +15,8 @@ function FilterProductContent({filteredProducts}) {
           <Row>
           { filteredProducts.map((x)=>(
               <Col span={8}>
-              <ProductCart item={x.item} title={x.title} img={x.image} price={x.price} />
+                {console.log(x)}
+              <ProductCart item={x} title={x.title} img={x.image} price={x.price} />
             </Col>
          ))
          }
@@ -26,7 +27,7 @@ function FilterProductContent({filteredProducts}) {
           {
             info.map((x=>(
               <Col span={8}>
-              <ProductCart item={x.item} title={x.title} img={x.image} price={x.price} />
+              <ProductCart item={x} title={x.title} img={x.image} price={x.price} />
             </Col>
             )))
           }

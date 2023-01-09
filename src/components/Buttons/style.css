@@ -6,3 +6,24 @@
     border-color: transparent;
     font-family: Poppins-Semi;
 }
+
+
+@media only screen and (max-width: 992px) {
+    .main-button {
+        padding: 9px 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-button {
+        padding: 4px 8px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-button {
+        border-radius: 5px;
+        padding: 2px 4px;
+        font-size: 12px;
+    }
+}

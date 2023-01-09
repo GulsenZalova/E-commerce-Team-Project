@@ -2,15 +2,31 @@ import React, { useContext } from 'react'
 import "./style.css"
 import { dataContext } from '../../contexts/ProductContext'
 import { Carousel } from 'antd';
-import { ArrowLeftOutlined,ArrowRightOutlined } from "@ant-design/icons";
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 
 
 function index() {
     let { categories, data } = useContext(dataContext);
 
+    const carouselResponsiveSettings = [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 805,
+            settings: {
+                slidesToShow: 1,
+            },
+        }
+    ]
+
     return (
         <div className='mini-carts'>
-            <Carousel arrows={true} dots={false} slidesToShow={3} prevArrow={<ArrowLeftOutlined />} nextArrow={<ArrowRightOutlined />}>
+            <Carousel responsive={carouselResponsiveSettings}
+                arrows={true} dots={false} slidesToShow={3} prevArrow={<ArrowLeftOutlined />} nextArrow={<ArrowRightOutlined />}>
                 {React.Children.toArray(
                     categories && categories.map(item => (
                         <div className='all-categories-carousel'>
@@ -24,7 +40,7 @@ function index() {
                         </div>
                     )))}
             </Carousel>
-        </div>
+        </div >
     )
 }
 
