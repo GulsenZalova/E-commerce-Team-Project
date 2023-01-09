@@ -47,8 +47,8 @@ function RelatedProducts({productDetail}) {
     )
 }
 
-RelatedProducts.propTypes = {
-    productDetail: PropTypes.object
-}
+// RelatedProducts.propTypes = {
+//     productDetail: PropTypes.object
+// }
 
 export default RelatedProducts
