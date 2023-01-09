@@ -98,8 +98,8 @@ function ProductDetail({productDetail}) {
     )
 }
 
-ProductDetail.propTypes = {
-    productDetail: PropTypes.object.isRequired
-}
+// ProductDetail.propTypes = {
+//     productDetail: PropTypes.object.isRequired
+// }
 
 export default ProductDetail

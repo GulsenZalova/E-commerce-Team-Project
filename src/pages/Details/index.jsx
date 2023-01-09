@@ -14,7 +14,7 @@ function Details() {
   useEffect(() => {
     network.getById(BASE_URL, param.id)
       .then((res) => setProductDetail(res));
-  }, [productDetail]);
+  }, []);
 
 
   return (
