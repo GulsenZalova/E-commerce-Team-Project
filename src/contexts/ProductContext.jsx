@@ -5,8 +5,7 @@ export const ProductContext = ({ children }) => {
 
     const [data, setData] = useState([]);
     const [categories, setCategories] = useState([]);
-
-
+    const [singleProduct, setSingleProduct] = useState({});
 
     useEffect(() => {
         network.getAll(BASE_URL)
@@ -25,9 +24,7 @@ export const ProductContext = ({ children }) => {
         data,
         setData,
         categories,
-        setCategories,
-        // productDetail,
-        // setProductDetail
+        setCategories
     }
     return <dataContext.Provider value={values}>{children}</dataContext.Provider>
 }

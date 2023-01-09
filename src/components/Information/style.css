@@ -1,9 +1,43 @@
-.row{
+.row {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.information{
+.info-contact {
+    font-size: 14px;
+    line-height: 21px;
+    color: #292D32;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px 0;
+}
+
+.info-service {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+.info-service .info-detail p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #292D32;
+}
+.info-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+@media (max-width:992px){
+    .information{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

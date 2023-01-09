@@ -17,12 +17,14 @@
     position: absolute;
     top: 0;
     right: 0;
-    color: white;
-    padding: 8px;
+    padding: 5px 10px!important;
     background: #EDA415;
-    border-radius: 5px;
     border-color: transparent;
     font-family: Poppins-Semi;
+    border-radius: 15px;
+    font-size: 10px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
 
 .span {
@@ -35,4 +37,43 @@
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.header-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.icon-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+@media (max-width:992px){
+    .header-main-container{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
