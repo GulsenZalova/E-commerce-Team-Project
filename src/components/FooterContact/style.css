@@ -34,7 +34,16 @@
     
     color: #606060; 
 }
-
-/* .service{
-    margin-left: 70px;
-} */
+@media (max-width:1024px){
+    .contenttext{
+        text-align: center;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}

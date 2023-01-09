@@ -1,3 +1,38 @@
 .layout {
     margin-bottom: 55px;
 }
+
+.filtercontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterside{
+    width: 20%;
+}
+
+.filtercontent{
+    width:75%;
+}
+/* Responsive Design */
+@media (max-width:992px){
+    .filterside{
+      width: 35%;
+    }
+    .filtercontent{
+      width:55%;
+    }
+  }
+
+  @media (max-width:768px){
+    .filtercontainer{
+        flex-direction: column;
+        gap: 40px;
+      }
+    .filterside{
+      width: 100%;
+    }
+    .filtercontent{
+      width:100%;
+    }
+  }

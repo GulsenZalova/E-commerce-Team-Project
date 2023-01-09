@@ -8,16 +8,17 @@ function Information() {
     return (
         <div className='container'>
             <div className='information'>
-                <Row>
-                    <Col span={8}>Need help? Call ue (+98) 0234 456 789</Col>
-                    <Col span={8}></Col>
-                    <Col span={8}>
-                        <Row>
-                            <Col className='row' span={12}> <img width={20} src={location} alt="" /> Our store</Col>
-                            <Col className='row' span={12}> <img width={20} src={truck} alt="" /> Truck your order</Col>
-                        </Row>
-                    </Col>
-                </Row>
+                <div className='info-contact'>Need help? Call ue (+98) 0234 456 789</div>
+                <div className='info-service'>
+                    <div className='info-detail'>
+                        <img width={20} src={location} alt="" />
+                        <p>Our store</p>
+                    </div>
+                    <div className='info-detail'>
+                        <img width={20} src={truck} alt="" />
+                        <p>Truck your order</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

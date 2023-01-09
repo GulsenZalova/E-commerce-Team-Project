@@ -10,9 +10,9 @@ const {Sider, Content } = Layout;
 function ProductFilter() {
   const [selectCatagory,setSelectCatagory]=useState([])
   const data=useContext(dataContext)
+
   const info=data.data
- 
- 
+
   const filteredProducts = info.filter(x=>selectCatagory.includes(x.category))
  console.log(filteredProducts)
   useEffect(() => {
@@ -21,12 +21,11 @@ function ProductFilter() {
 },[])
   return (
     <div className='layout'>
-       <Layout className='container  '>
-        <Sider ><ProductFilterSide selectCatagory={selectCatagory} setSelectCatagory={setSelectCatagory}/></Sider>
-        <Content><FilterProductContent filteredProducts={filteredProducts} /></Content>
-      </Layout>
+      <div className='container filtercontainer '>
+        <div className='filterside'><ProductFilterSide selectCatagory={selectCatagory} setSelectCatagory={setSelectCatagory}/></div>
+        <div className='filtercontent'><FilterProductContent filteredProducts={filteredProducts} /></div>
+      </div>
     </div>
   )
 }
-
 export default ProductFilter

@@ -25,3 +25,11 @@ li a{
 h1{
     color: #1B5A7D;
 }
+
+/* Responsive Design */
+
+@media (max-width:1024px){
+    .footermenu{
+        padding: 40px;
+    }
+}
