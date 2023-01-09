@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css"
 import boxTick from "../../assets/images/box-tick.svg"
 import crown from "../../assets/images/crown.svg"
-import vector from "../../assets/images/vector.svg"
+import image10 from "../../assets/images/image10.svg"
 
 function Guarantee() {
     return (
@@ -23,7 +23,7 @@ function Guarantee() {
                     </div>
                 </div>
                 <div className='guarantee-parts'>
-                    <img src={vector} className='guarantee-parts-img' />
+                    <img src={image10} className='guarantee-parts-img' />
                     <div className='guarantee-text'>
                         <h1>1 year warranty</h1>
                         <span>Avaliable warranty</span>
