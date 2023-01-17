@@ -1,0 +1,19 @@
+.favorites{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 55px 0;
+}
+
+.deleteBTN{
+    color: white;
+    padding: 18px 32px;
+    background: #EDA415;
+    border-radius: 20px;
+    border-color: transparent;
+    font-family: Poppins-Semi;
+}
+.favMessage{
+    margin: 55px 0;
+    text-align: center;
+}

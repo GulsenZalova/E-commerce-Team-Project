@@ -12,18 +12,31 @@ function ProductCart(props) {
   let { item, title, img, price, } = props
 
   const [hoveredElement, setHoveredElement] = useState("");
+  const {setFavorites,favorites}=useContext(dataContext)
 
-
+  const setFavoritesElement=(element)=>{
+    let selectedFavorite=favorites.find((x)=>x.id==element.id)
+    if(!selectedFavorite){
+       setFavorites([...favorites,element])
+    }else{
+      setFavorites(()=>{
+       return favorites.filter((x)=>x.id!==element.id)
+      })
+    }
+  }
 
   return (
     <>
-      <Link to={`/product/${item.id}`}>
+
         <div
           onMouseOver={() => setHoveredElement(item)}
           onMouseLeave={() => setHoveredElement("")}
           className='carts'>
           <div style={{ height: "320px" }} className='productt'>
+            <Link to={`/product/${item.id}`}>
             <img className='product-image' src={img} />
+            </Link>
+          
             {hoveredElement !== item ?
               <>
                 <h3>{title}</h3>
@@ -37,18 +50,19 @@ function ProductCart(props) {
                     <span className='addCart'>Add to Cart</span>
                     <span className='shopping-icon'><img src={shoppingCart} /></span>
                   </button>
-                  <button className='look-detailly'>
-                    <img src={eyeIcon} />
+
+               <button className='look-detailly' >
+                    <img src={eyeIcon}  />
                   </button>
+               
                 </div>
               </>
             }
             <div className='whishlist-icon'>
-              <img src={heartIcon} />
+              <img src={heartIcon} onClick={()=>setFavoritesElement(item)}  />
             </div>
           </div>
         </div>
-      </Link>
     </>
   )
 }

@@ -80,8 +80,8 @@ function Navbar() {
               <Drawer className='drawer' title="Basic Drawer" placement="right" onClose={onClose} open={open}>
                 <nav>
                   <ul className='list'>
-                    <li><a>Home <DownOutlined style={{ marginLeft: "5px", fontSize: "14px" }} /></a></li>
-                    <li><a>Catalog <DownOutlined style={{ marginLeft: "5px", fontSize: "14px" }} /></a></li>
+                    <li><Link to={"/"}>Home <DownOutlined style={{ marginLeft: "5px", fontSize: "14px" }} /></Link></li>
+                    <li><Link to={"/catalog"}>Catalog <DownOutlined style={{ marginLeft: "5px", fontSize: "14px" }} /></Link></li>
                     <li><a>Blog</a></li>
                     <li><a>Pages <DownOutlined style={{ marginLeft: "5px", fontSize: "14px" }} /></a></li>
                     <li style={{ whiteSpace: "nowrap" }}><a >About us</a></li>

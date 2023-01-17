@@ -28,11 +28,11 @@
 }
 
 .span {
-    width: 10px;
-    height: 10px;
+    width: 18px;
+    height: 18px;
     background-color: #EDA415;
     border-radius: 50%;
-    font-size: 6px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;

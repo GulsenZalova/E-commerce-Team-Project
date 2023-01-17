@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import "./style.css"
 import blog1 from "../../assets/images/Blog-1.svg"
+import { dataContext } from '../../contexts/ProductContext'
 import heartIcon from "../../assets/icons/Heart.svg"
 import availability from "../../assets/images/available.svg"
 import { Rate } from 'antd'
@@ -11,8 +12,12 @@ import {
     InstagramOutlined
 } from '@ant-design/icons';
 
-function ProductDetail({productDetail}) {
 
+
+function ProductDetail({productDetail}) {
+    
+   
+    
 
 
 
@@ -60,7 +65,8 @@ function ProductDetail({productDetail}) {
                             <div className='product-detail-add'>
                                 <button >Add to cart</button>
                                 <button>Buy it now</button>
-                                <img src={heartIcon} />
+
+                                <img src={heartIcon}  />
                             </div>
 
                             <hr />

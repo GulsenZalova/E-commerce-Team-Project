@@ -5,6 +5,7 @@ import Catalog from '../pages/Catalog'
 import Home from '../pages/Home'
 import ProjectLayout from '../components/ProjectLayout'
 import Details from '../pages/Details'
+import Favorites from '../pages/Favorites'
 
 function ProjectRoutes() {
   return (
@@ -14,6 +15,7 @@ function ProjectRoutes() {
           <Route index element={<Home />}></Route>
           <Route path='/catalog' element={<Catalog />}></Route>
           <Route path='/product/:id' element={<Details />}></Route>
+          <Route path='/favorites' element={<Favorites/>}></Route>
         </Route>
       </Routes>
     </>
