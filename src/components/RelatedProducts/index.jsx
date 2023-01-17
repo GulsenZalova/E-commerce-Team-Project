@@ -29,7 +29,7 @@ function RelatedProducts({productDetail}) {
     return (
         <div className='related-products'>
             <div className='related-header'>
-                <h1>Popular Products</h1>
+                <h1>Related Products</h1>
             </div>
 
             {productDetail &&

@@ -12,14 +12,7 @@ import {
     InstagramOutlined
 } from '@ant-design/icons';
 
-
-
 function ProductDetail({productDetail}) {
-    
-   
-    
-
-
 
     return (
         <>
@@ -104,8 +97,8 @@ function ProductDetail({productDetail}) {
     )
 }
 
-ProductDetail.propTypes = {
-    productDetail: PropTypes.object.isRequired
-}
+// ProductDetail.propTypes = {
+//     productDetail: PropTypes.object.isRequired
+// }
 
 export default ProductDetail
